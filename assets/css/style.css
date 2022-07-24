@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+	--purple: #741572;
+	--yellow: #fdf13c;
+	--green: #33ba39;
+	--purple1: #853a76;
+	--yellow1: #fdf13c;
+	--green1: #277647;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', 'Open Sans', sans-serif;
+}
+
+.brand-text {
+	color: var(--yellow);
+}
+
+a.brand-text:hover {
+	color: var(--yellow);
+}
+
+a.link-active {
+	position: relative;
+}
+
+a.link-active::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	background-color: var(--green);
+	top: 32px;
+	left: 0;
+}
+
+.nav-bg {
+	background-color: var(--purple);
+}
+
+.footer-bg {
+	background-color: #353535;
+}
+
+.img-struktur,
+.img-denah {
+	max-width: 60%;
+}
+
+.table-angkot,
+.table-bus {
+	max-height: 500px;
+}
+
+.akap,
+.akdp {
+	position: relative;
+}
+
+.akap::before,
+.akdp::before {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.akap::before {
+	background-color: var(--green);
+}
+
+.akdp::before {
+	background-color: var(--yellow);
+}

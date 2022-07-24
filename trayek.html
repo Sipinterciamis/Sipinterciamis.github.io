@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sipinter - UPTD Terminal Ciamis | Trayek</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<script src="https://kit.fontawesome.com/543be25259.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg nav-bg p-3 shadow-sm sticky-top">
+			<div class="container-fluid">
+				<div class="d-flex flex-column w-50">
+					<a class="navbar-brand fw-bold fs-4 brand-text" href="#">Sipinter</a>
+					<small class="text-light">Sistem Informasi Manajemen Terminal Ciamis</small>
+				</div>
+				<button
+					class="navbar-toggler text-light"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item me-2">
+							<a class="nav-link link-light d-inline-block" href="index.html">Info</a>
+						</li>
+						<li class="nav-item me-2">
+							<a class="nav-link link-light d-inline-block" href="denah.html">Denah</a>
+						</li>
+						<li class="nav-item me-2">
+							<a class="nav-link link-light d-inline-block link-active" href="#">Trayek</a>
+						</li>
+						<li class="nav-item me-2">
+							<a class="nav-link link-light d-inline-block" href="feedback.html">Kritik & Saran</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container mt-5 mb-5">
+			<div class="row">
+				<div class="col mb-4 text-center">
+					<h2>Peta Rute Trayek Angkot</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 mb-5">
+					<div class="text-center">
+						<img src="assets/img/trayek-au-ciamis.png" class="img-fluid img-denah rounded-3" alt="..." />
+					</div>
+				</div>
+				<div class="col-12 mb-5">
+					<div class="text-center">
+						<img src="assets/img/angkot-angdes.jpg" class="img-fluid img-denah rounded-3" alt="..." />
+					</div>
+				</div>
+				<div class="col-12 mb-5">
+					<div class="text-center">
+						<img src="assets/img/zona-trayek-au.jpg" class="img-fluid img-denah rounded-3" alt="..." />
+					</div>
+				</div>
+				<div class="col-12 mb-5">
+					<div class="text-center">
+						<img src="assets/img/zona-trayek-au-1.jpg" class="img-fluid img-denah rounded-3" alt="..." />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container mt-5">
+			<div class="row">
+				<div class="col mb-4 text-center">
+					<h2>Daftar Angkot Terminal Ciamis</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<!-- <div class="col-md-2">
+					<div class="card">
+						<img src="assets/img/angkot/angkot-01.png" class="card-img img-angkot img-fluid" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title">Angkot 01</h5>
+							<p class="card-text">CIAMIS - CISEPET - BUNISEURI</p>
+						</div>
+					</div>
+				</div> -->
+				<div class="col-9 col-sm-12 col-md-10">
+					<div class="overflow-auto table-angkot mb-5">
+						<table class="table table-bordered align-middle">
+							<thead class="table-light text-center">
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Foto</th>
+									<th scope="col">Angkot</th>
+									<th scope="col">Trayek</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td class="text-center"><img src="assets/img/angkot/angkot-01.png" class="img-angkot img-fluid rounded-2" alt="..." /></td>
+									<td>Angkot 01</td>
+									<td>CIAMIS - CISEPET - BUNISEURI</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td class="text-center"><img src="assets/img/angkot/angkot-02.png" class="img-angkot img-fluid rounded-2" alt="..." /></td>
+									<td>Angkot 02</td>
+									<td>CIAMIS - CISEPET - KARANGAMPEL</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td class="text-center"><img src="assets/img/angkot/angkot-04.png" class="img-angkot img-fluid rounded-2" alt="..." /></td>
+									<td>Angkot 04</td>
+									<td>CIAMIS - PAWINDAN - BENTENG</td>
+								</tr>
+								<tr>
+									<th scope="row">4</th>
+									<td class="text-center"><img src="assets/img/angkot/angkot-05.png" class="img-angkot img-fluid rounded-2" alt="..." /></td>
+									<td>Angkot 05</td>
+									<td>CIAMIS - SADANANYA - GUNUNGSARI</td>
+								</tr>
+								<tr>
+									<th scope="row">5</th>
+									<td class="text-center"><img src="assets/img/angkot/angkot-06.png" class="img-angkot img-fluid rounded-2" alt="..." /></td>
+									<td>Angkot 06</td>
+									<td>CIAMIS - PAWINDAN - CIGEMBOR</td>
+								</tr>
+								<tr>
+									<th scope="row">6</th>
+									<td class="text-center"><img src="assets/img/angkot/angkot-07.png" class="img-angkot img-fluid rounded-2" alt="..." /></td>
+									<td>Angkot 07</td>
+									<td>CIAMIS - DARUSSALAM - CIHARALANG</td>
+								</tr>
+								<tr>
+									<th scope="row">7</th>
+									<td class="text-center"><img src="assets/img/angkot/angkot-08.png" class="img-angkot img-fluid rounded-2" alt="..." /></td>
+									<td>Angkot 08</td>
+									<td>CIAMIS - IMBANAGARA - CISADAP</td>
+								</tr>
+								<tr>
+									<th scope="row">8</th>
+									<td class="text-center"><img src="assets/img/angkot/angkot-09.png" class="img-angkot img-fluid rounded-2" alt="..." /></td>
+									<td>Angkot 09</td>
+									<td>CIAMIS - IMBANAGARA - GUNUNGSARI</td>
+								</tr>
+								<tr>
+									<th scope="row">9</th>
+									<td class="text-center"><img src="assets/img/angkot/angkot-010.png" class="img-angkot img-fluid rounded-2" alt="..." /></td>
+									<td>Angkot 010</td>
+									<td>CIAMIS - KARANGANYAR</td>
+								</tr>
+								<tr>
+									<th scope="row">10</th>
+									<td class="text-center"><img src="assets/img/angkot/angkot-011.png" class="img-angkot img-fluid rounded-2" alt="..." /></td>
+									<td>Angkot 011</td>
+									<td>CIAMIS - BOJONGMENGGER - KARANGANYAR - CIPARIGI</td>
+								</tr>
+								<tr>
+									<th scope="row">11</th>
+									<td class="text-center"><img src="assets/img/angkot/angkot-012.png" class="img-angkot img-fluid rounded-2" alt="..." /></td>
+									<td>Angkot 012</td>
+									<td>CIAMIS - JETAK - NASOL</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col mb-4 mt-5 text-center">
+					<h2>Data Bus AKAP dan AKDP di Terminal Ciamis</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<!-- Bus AKAP -->
+				<div class="col-11 col-md-12">
+					<div class="card py-4 mb-5 shadow">
+						<div class="row justify-content-evenly">
+							<div class="col-10 col-md-5">
+								<h4 class="akap ps-3">AKAP Besar</h4>
+								<div class="overflow-auto table-bus mb-5">
+									<table class="table table-bordered align-middle">
+										<thead class="table-light text-center">
+											<tr>
+												<th scope="col">#</th>
+												<th scope="col">Nama PO</th>
+												<th scope="col">Tujuan</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row">1</th>
+												<td>ALADIN</td>
+												<td>BDG - PWRTO</td>
+											</tr>
+											<tr>
+												<th scope="row">2</th>
+												<td>HARUN</td>
+												<td>BDG - PWRTO</td>
+											</tr>
+											<tr>
+												<th scope="row">3</th>
+												<td>JAYA LANGIT</td>
+												<td>BDG - PWRTO</td>
+											</tr>
+											<tr>
+												<th scope="row">4</th>
+												<td>MANDALA</td>
+												<td>BDG - SURABAYA</td>
+											</tr>
+											<tr>
+												<th scope="row" rowspan="7">5</th>
+												<td rowspan="7">BUDIMAN</td>
+												<td>TASIK - SEMARANG</td>
+											</tr>
+											<tr>
+												<td>BDG - WNB</td>
+											</tr>
+											<tr>
+												<td>BDG - YOGYA</td>
+											</tr>
+											<tr>
+												<td>BDG - TNG</td>
+											</tr>
+											<tr>
+												<td>TASIK - SEMARANG</td>
+											</tr>
+											<tr>
+												<td>BDG - JKT</td>
+											</tr>
+											<tr>
+												<td>TSK - JPR</td>
+											</tr>
+											<tr>
+												<th scope="row" rowspan="4">6</th>
+												<td rowspan="4">MERDEKA</td>
+												<td>BJR - TNGR</td>
+											</tr>
+											<tr>
+												<td>BJR - MERAK</td>
+											</tr>
+											<tr>
+												<td>BJR - JKT</td>
+											</tr>
+											<tr>
+												<td>BJR - SUMATRA</td>
+											</tr>
+											<tr>
+												<th scope="row">7</th>
+												<td>GAPURANING RAHAYU</td>
+												<td>BJR - JKT</td>
+											</tr>
+											<tr>
+												<th scope="row">8</th>
+												<td>PERKASA JAYA</td>
+												<td>BJR - JKT</td>
+											</tr>
+											<tr>
+												<th scope="row" rowspan="3">9</th>
+												<td rowspan="3">SINAR JAYA</td>
+												<td>CLP - JKT</td>
+											</tr>
+											<tr>
+												<td>BDG - WNB</td>
+											</tr>
+											<tr>
+												<td>BDG - CLP</td>
+											</tr>
+											<tr>
+												<th scope="row" rowspan="2">10</th>
+												<td rowspan="2">DO'A IBU</td>
+												<td>BJR - JKT</td>
+											</tr>
+											<tr>
+												<td>BJR - CIKARANG</td>
+											</tr>
+											<tr>
+												<th scope="row">11</th>
+												<td>DAMRI</td>
+												<td>BJR - SUMATRA</td>
+											</tr>
+											<tr>
+												<th scope="row">12</th>
+												<td>SUGENG RAHAYU</td>
+												<td>SRB - BDG</td>
+											</tr>
+											<tr>
+												<th scope="row" rowspan="4">13</th>
+												<td rowspan="4">SUMBER JAYA</td>
+												<td>BJR - DPK</td>
+											</tr>
+											<tr>
+												<td>BJR - JKT</td>
+											</tr>
+											<tr>
+												<td>KAWALI - DPK</td>
+											</tr>
+											<tr>
+												<td>BJR - PALEMBANG</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="col-10 col-md-5">
+								<h4 class="akap ps-3">AKAP Sedang</h4>
+								<div class="overflow-auto table-bus">
+									<table class="table table-bordered align-middle">
+										<thead class="table-light text-center">
+											<tr>
+												<th scope="col">#</th>
+												<th scope="col">Nama PO</th>
+												<th scope="col">Tujuan</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row">1</th>
+												<td>BUDIMAN</td>
+												<td>BDG - PWRTO</td>
+											</tr>
+											<tr>
+												<th scope="row">2</th>
+												<td>BSK</td>
+												<td>TASIK - CILACAP</td>
+											</tr>
+											<tr>
+												<th scope="row">3</th>
+												<td>LAKSANA</td>
+												<td>TASIK - PWRTO</td>
+											</tr>
+											<tr>
+												<th scope="row">4</th>
+												<td>TEGUH</td>
+												<td>TASIK - PWRTO</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end Bus AKAP -->
+
+				<!-- Bus AKDP -->
+				<div class="col-11 col-md-12">
+					<div class="card py-4 mb-5 shadow">
+						<div class="row justify-content-evenly">
+							<div class="col-10 col-md-5">
+								<h4 class="akdp ps-3">AKDP Besar</h4>
+								<div class="overflow-auto table-bus mb-5">
+									<table class="table table-bordered align-middle">
+										<thead class="table-light text-center">
+											<tr>
+												<th scope="col">#</th>
+												<th scope="col">Nama PO</th>
+												<th scope="col">Tujuan</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row" rowspan="5">1</th>
+												<td rowspan="5">BUDIMAN</td>
+												<td>PND - BDG</td>
+											</tr>
+											<tr>
+												<td>PND - DEPOK</td>
+											</tr>
+											<tr>
+												<td>PND - BEKASI</td>
+											</tr>
+											<tr>
+												<td>PND - SUKABUMI</td>
+											</tr>
+											<tr>
+												<td>PND - KRWANG</td>
+											</tr>
+											<tr>
+												<th scope="row">2</th>
+												<td>MERDEKA</td>
+												<td>BJR - SUKABUMI</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="col-10 col-md-5">
+								<h4 class="akdp ps-3">AKDP Sedang</h4>
+								<div class="overflow-auto table-bus">
+									<table class="table table-bordered align-middle">
+										<thead class="table-light text-center">
+											<tr>
+												<th scope="col">#</th>
+												<th scope="col">Nama PO</th>
+												<th scope="col">Tujuan</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row" rowspan="2">1</th>
+												<td rowspan="2">BUDIMAN</td>
+												<td>TASIK - CIJULANG</td>
+											</tr>
+											<tr>
+												<td>TASIK - CIREBON</td>
+											</tr>
+											<tr>
+												<th scope="row">2</th>
+												<td>SONNY</td>
+												<td>TASIK - CIJULANG</td>
+											</tr>
+											<tr>
+												<th scope="row">3</th>
+												<td>SONNY PRIMA</td>
+												<td>TASIK - CIJULANG</td>
+											</tr>
+											<tr>
+												<th scope="row">4</th>
+												<td>SO PERDANA</td>
+												<td>TASIK - CIJULANG</td>
+											</tr>
+											<tr>
+												<th scope="row">5</th>
+												<td>HARUM</td>
+												<td>TASIK - CIREBON</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end Bus AKDP -->
+			</div>
+		</div>
+
+		<!-- footer -->
+		<div class="container-fluid">
+			<footer class="row row-cols-2 row-cols-sm-2 row-cols-md-5 py-5 border-top footer-bg">
+				<div class="col mb-3 text-light ps-4">
+					<h5 class="fw-bold mb-3">UPTD TERMINAL CIAMIS</h5>
+					<p class="mb-0 fw-semibold brand-text">Sipinter</p>
+					<small>Sistem Informasi Manajemen Terminal Ciamis</small>
+					<!-- <p class="text-muted">&copy; 2022</p> -->
+				</div>
+
+				<div class="col mb-3"></div>
+
+				<div class="col mb-3 ps-4">
+					<h5 class="text-light fw-bold">Menu</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 d-inline-block link-light">Info</a></li>
+						<li class="nav-item mb-2"><a href="denah.html" class="nav-link p-0 d-inline-block link-light">Denah</a></li>
+						<li class="nav-item mb-2"><a href="#" class="nav-link p-0 d-inline-block link-light">Trayek</a></li>
+						<li class="nav-item mb-2"><a href="feedback.html" class="nav-link p-0 d-inline-block link-light">Kritik & Saran</a></li>
+					</ul>
+				</div>
+
+				<div class="col mb-3">
+					<h5 class="text-light fw-bold">Kontak</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2 text-light"><i class="fa-solid fa-map-location-dot"></i> Jl. Letnan Samuji</li>
+						<li class="nav-item mb-2 text-light"><i class="fa-solid fa-phone"></i> (0265)774237</li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+		<!-- end footer -->
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
